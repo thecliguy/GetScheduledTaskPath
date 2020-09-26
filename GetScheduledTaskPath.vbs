@@ -12,16 +12,17 @@ Function GetScheduledTaskPath
     '   function will return the scheduled task's path.
     '
     ' HOW IT WORKS
-    '   When a scheduled task calls a VBScript interpreter (cscript or wscript), 
-    '   the task's EnginePID is populated with the interpreter's process ID
-    '   (PID). This function compares the EngineID of each running task against 
-    '    the script interpreter's PID and returns the task path of any matches.
+    '   When a scheduled task invokes a VBScript interpreter (cscript or 
+	'   wscript), the task's EnginePID is populated with the interpreter's 
+	'   process ID (PID). This function compares the EngineID of each running 
+	'   task against the script interpreter's PID and returns the task path of 
+	'   any matches.
     '
     ' CAVEATS
-    '   This function will only work in scripts where the interpreter is called
+    '   This function will only work in scripts where the interpreter is invoked
     '   directly by a scheduled task (scheduled task -> interpreter). It will 
-    '   not work in scripts where the interpreter is called indirectly, such as 
-    '   a task that calls a batch file which in turn calls a VBScript 
+    '   not work in scripts where the interpreter is invoked indirectly, such as 
+    '   a task that invokes a batch file which in turn invokes a VBScript 
     '   interpreter (scheduled task -> batch file -> interpreter).
     '
     '   This script has been tested on Windows 7 and is known **not** to work.
