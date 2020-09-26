@@ -11,3 +11,5 @@ interpreter's PID and returns the task path of any matches.
 
 FURTHER READING
 ---------------
+I wrote a blog post to accompany the first release of this script, see
+[Get Scheduled Task Path in VBScript](https://www.thecliguy.co.uk/2020/09/26/get-scheduled-task-path-in-vbscript/).
