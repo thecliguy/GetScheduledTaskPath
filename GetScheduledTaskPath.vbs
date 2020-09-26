@@ -13,10 +13,10 @@ Function GetScheduledTaskPath
     '
     ' HOW IT WORKS
     '   When a scheduled task invokes a VBScript interpreter (cscript or 
-	'   wscript), the task's EnginePID is populated with the interpreter's 
-	'   process ID (PID). This function compares the EngineID of each running 
-	'   task against the script interpreter's PID and returns the task path of 
-	'   any matches.
+    '   wscript), the task's EnginePID is populated with the interpreter's 
+    '   process ID (PID). This function compares the EngineID of each running 
+    '   task against the script interpreter's PID and returns the task path of 
+    '   any matches.
     '
     ' CAVEATS
     '   This function will only work in scripts where the interpreter is invoked
